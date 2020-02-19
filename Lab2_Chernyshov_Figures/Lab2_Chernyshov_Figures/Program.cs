@@ -31,7 +31,7 @@ namespace Lab2_Chernyshov_Figures
         static void Main(string[] args)
         {
             int n;
-            string inputFileName = "input.txt";
+            string inputFileName = "../../input.txt";
 
             try
             {
