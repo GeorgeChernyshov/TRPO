@@ -5,8 +5,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
+using static Figures.FigureExceptions;
 using static Helpers.Helpers;
-using static Lab2_Chernyshov_Figures.Exceptions;
 
 namespace Lab2_Chernyshov_Figures
 {
@@ -32,25 +33,33 @@ namespace Lab2_Chernyshov_Figures
         {
             int n;
             string inputFileName = "../../input.txt";
+            string logFileName = "../../log.txt";
 
             try
             {
                 using (var inputStream = new FileStream(inputFileName, FileMode.Open))
                 using (var streamReader = new StreamReader(inputStream))
                 {
+                    var logStream = new FileStream(logFileName, FileMode.Create);
+                    var figureXMLSerializer = new FigureXMLSerializer();
+
                     n = TryParseInt(streamReader.ReadLine());
                     for (int i = 0; i < n; i++)
                     {
                         string line = streamReader.ReadLine();
                         try
                         {
-                            Console.WriteLine(ParseFigure(line).ToString());
+                            var figure = ParseFigure(line);
+                            Console.WriteLine(figure.ToString());
+                            figureXMLSerializer.Serialize(logStream, figure);
                         }
                         catch (Exception e)
                         {
                             Console.WriteLine(String.Format("Строка {0}: {1}", (i + 1).ToString(), e.Message));
                         }
                     }
+
+                    logStream.Close();
                 }
             }
             catch(Exception e)

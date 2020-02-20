@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Rectangle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Width>2</Width>
+  <Height>4</Height>
+</Rectangle><?xml version="1.0"?>
+<Circle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Radius>3</Radius>
+</Circle><?xml version="1.0"?>
+<Triangle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Edge1>3</Edge1>
+  <Edge2>4</Edge2>
+  <Edge3>5</Edge3>
+</Triangle><?xml version="1.0"?>
+<Rectangle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Width>10</Width>
+  <Height>1</Height>
+</Rectangle><?xml version="1.0"?>
+<Circle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Radius>1</Radius>
+</Circle><?xml version="1.0"?>
+<Triangle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Edge1>3</Edge1>
+  <Edge2>3</Edge2>
+  <Edge3>3</Edge3>
+</Triangle>

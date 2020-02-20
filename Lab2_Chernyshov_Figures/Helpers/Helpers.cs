@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,8 @@ namespace Helpers
         /// <returns>Целое число</returns>
         public static int TryParseInt(string input)
         {
+            Trace.WriteLine("Вызвана функция TryParseInt");
+
             for (int i = 0; i < input.Length; i++)
                 if (!(Char.IsDigit(input[i]) || (input[i] == '-' && i == 0)))
                     throw new NotANumberException();
@@ -42,6 +45,8 @@ namespace Helpers
         /// <returns>Полученное число формата Double</returns>
         public static double TryParseDouble(string input)
         {
+            Trace.WriteLine("Вызвана функция TryParseDouble");
+
             double answer = 0;
             if (!Double.TryParse(input, out answer))
                 throw new NotANumberException();
