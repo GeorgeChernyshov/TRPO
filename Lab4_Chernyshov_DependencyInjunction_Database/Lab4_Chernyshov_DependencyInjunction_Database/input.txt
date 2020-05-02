@@ -1,0 +1,7 @@
+Oracle
+createtable
+add
+grantrights
+remove
+invoke
+h

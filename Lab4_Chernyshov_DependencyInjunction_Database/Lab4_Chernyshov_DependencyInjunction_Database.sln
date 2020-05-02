@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab4_Chernyshov_DependencyInjunction_Database", "Lab4_Chernyshov_DependencyInjunction_Database\Lab4_Chernyshov_DependencyInjunction_Database.csproj", "{0B9A6D46-A6B2-4612-BCCB-B950097836ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseWork", "DatabaseWork\DatabaseWork.csproj", "{A9E502C6-37E4-4A69-BA32-E818811CD2EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B9A6D46-A6B2-4612-BCCB-B950097836ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B9A6D46-A6B2-4612-BCCB-B950097836ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B9A6D46-A6B2-4612-BCCB-B950097836ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B9A6D46-A6B2-4612-BCCB-B950097836ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E502C6-37E4-4A69-BA32-E818811CD2EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E502C6-37E4-4A69-BA32-E818811CD2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E502C6-37E4-4A69-BA32-E818811CD2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E502C6-37E4-4A69-BA32-E818811CD2EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD55F20A-DF19-4D1C-94F0-FBF40FBB7728}
+	EndGlobalSection
+EndGlobal
